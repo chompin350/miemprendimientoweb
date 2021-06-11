@@ -1,0 +1,12 @@
+.button{
+    background-color: $me-tangerine;
+    font-size: $me-x-large;
+    border-radius: 5px;
+
+    &:hover{
+        background-color:$me-white;
+    }
+    &:focus{
+        background-color:$me-white;   
+    }
+}

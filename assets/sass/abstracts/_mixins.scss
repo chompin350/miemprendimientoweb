@@ -1,0 +1,24 @@
+// point break screen from movil to large de small a large
+@mixin point_phone{
+    @media (max-width:$break_phone){
+        @content;       
+    }
+}
+
+@mixin point_tablet{
+    @media (min-width:$break_phone) and (max-width:$break_tablet){
+        @content;       
+    } 
+}
+    
+@mixin point_desktop{
+    @media (min-width:$break_tablet) and (max-width:$break_desktop){
+        @content;       
+    } 
+}
+
+@mixin point_large{
+    @media (min-width:$break_large){
+        @content;       
+    } 
+}

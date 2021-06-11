@@ -1,0 +1,27 @@
+.thumbnail{
+    width: 100%;
+    text-align: center;
+
+    &__img{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        border: 1px solid #808080;
+
+        @include point_phone{
+            width: 15rem;
+            height:15rem;
+        }
+
+        @include point_desktop{
+            width: 10rem;
+            height: 10rem;
+        }
+
+        @include point_large{
+            width: 10rem;
+            height: 10rem;
+        }
+
+    }
+}

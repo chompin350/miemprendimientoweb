@@ -1,0 +1,75 @@
+.footer{
+    width: 100%;
+    background-color: $me-sable;
+    color: $me-white;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    justify-content: space-around;
+    margin-top: 0.5rem;
+
+    
+
+
+    &__list{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @include point_phone{
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-block-end:0;
+        }
+
+        @include point_tablet{
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        @include point_desktop{
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        @include point_desktop{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+    }
+
+    &__item{
+        font-family: $me-family-segundary;
+        text-decoration: none;
+        list-style: none;
+
+        a{
+            padding: 0 1rem;
+            text-decoration: none;
+            color: $me-white;
+        }
+
+        @include point_phone{
+            padding-bottom: 1rem;
+        }        
+
+    }
+
+    @include point_phone{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    @include point_tablet{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    @include point_desktop{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}

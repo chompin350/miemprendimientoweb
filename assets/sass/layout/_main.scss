@@ -1,0 +1,113 @@
+.main{
+    display: flex;
+    
+    &__contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid $me-grey;
+        margin-top: 1rem;
+    }
+
+    &__contenedor_der{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+    }
+
+
+    &__cursos{
+        border: 1px solid $me-charcoal;
+        padding: 1rem;
+        margin: .5rem;
+
+        &__item {
+            width: 100%;
+            margin: 1rem;
+        }
+
+        &__titulo{
+            text-align: center;
+
+        }    
+
+        &--barra{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            height: 4rem;
+            background-color: $me-barra;
+            color: $me-white;
+            font-weight: $me-font-regular;
+            font-family: $me-family-segundary;
+            font-size: $me-large;
+        }
+
+        &__rigth-iconos{
+            text-align: center;
+            font-size: $me-large;
+        }
+
+        &__list{
+
+            &__item{
+                list-style: circle;
+                font-family: $me-family-segundary;
+                a{
+                    text-decoration: none;
+                    color: $me-lila;
+
+                    &:hover{
+                        color:$me-orange;
+                    }
+                }
+            }
+        }
+    }
+
+    .item__img {
+        width: 100%;
+    }
+
+    .img_svg{
+        width: 10rem;
+        margin: 6rem auto 0;
+
+        @include point_phone{
+            margin: 2rem auto 0;
+            width: 18rem;
+        }
+
+        @include point_tablet{
+            margin: 2rem auto 0;
+            width: 18rem;
+        }
+
+        @include  point_desktop{
+            margin: 4rem auto 0;
+            width: 14rem;
+        }
+
+        @include point_large{
+            margin: 4rem auto 0;
+            width: 14rem;
+        }
+    }
+   
+}
+
+//barra de redes sociales
+.iconos{
+    font-size: $me-large;
+}
+//separacion entre itemes de redes sociales
+i{
+    padding: 1rem;
+}
+
+//imagen SVG path
+.imgr{
+    -webkit-animation: 3s rotate linear infinite;
+    animation: 3s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 79% 79%;
+}

@@ -1,0 +1,77 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: $me-black;
+    height: 60px;
+    padding-left: 1rem;
+
+
+    &__logo{
+        img{
+
+            width: 40px;
+            height: 40px;
+
+            @include point_phone{
+                width: 70px;
+                height: 70px;
+            }
+        }
+
+    }
+
+    &__container{
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1;
+
+    }
+
+    &__list{
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        align-items: center;
+        a{
+            margin: 0 20px;
+            font-weight: $me-font-regular;
+            font-size: $me-medium;
+            color: $me-white;
+        }
+    }
+
+    &__item{
+        list-style: none;
+        color: $me-white;
+        a{
+            color: $me-white;
+            text-decoration: none;
+            font-family: $me-family-segundary;
+            font-weight: $me-font-regular; 
+        }
+        @include point_phone{
+            display: none;
+        }
+    }
+
+    &__movil{
+        display: none;
+        color: $me-white;
+        font-size: $me-xx-large;
+
+        &:hover{
+            color: $me-orange;
+        }
+        &:focus{
+            color: $me-orange;
+        }
+        @include point_phone{
+            display: block;
+        }
+
+    }
+
+    @include point_phone{
+        height: 90px;
+    }
+}
