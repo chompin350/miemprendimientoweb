@@ -1,9 +1,7 @@
 .header{
     max-width: 100%;
     &__logo{
-        width: 50%;
         margin: 0 auto;
-
         @media (max-width:575.98px){
             width: 100%;
             margin: 0 auto;
@@ -16,6 +14,17 @@
 
     }
     &__img{
+        background-image: url('../img/desarrolloweb2021t.svg');
+        background-position: center;
+        background-repeat: no-repeat;
         width: 100%;
+        height: 50vh;
+
+        @media (max-width: 575.98px) {
+            height: 28vh;
+        }
+        @media (min-width: 576px) and (max-width: 768px) {
+            height: 30vh;
+        }
     }
 }

@@ -397,7 +397,6 @@ i {
   max-width: 100%;
 }
 .header__logo {
-  width: 50%;
   margin: 0 auto;
 }
 @media (max-width: 575.98px) {
@@ -413,7 +412,21 @@ i {
   }
 }
 .header__img {
+  background-image: url("../img/desarrolloweb2021t.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
+  height: 50vh;
+}
+@media (max-width: 575.98px) {
+  .header__img {
+    height: 28vh;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .header__img {
+    height: 30vh;
+  }
 }
 
 .navbar {
@@ -444,21 +457,18 @@ i {
   list-style: none;
   align-items: center;
 }
-.navbar__list a {
-  margin: 0 20px;
-  font-weight: 400;
-  font-size: 16px;
-  color: #ffffff;
-}
 .navbar__item {
   list-style: none;
   color: #ffffff;
 }
 .navbar__item a {
+  margin: 0 20px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
   color: #ffffff;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
 }
 @media (max-width: 576px) {
   .navbar__item {

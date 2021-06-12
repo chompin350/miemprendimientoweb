@@ -1,3 +1,4 @@
+// BARRA DE NAVEGACION
 .navbar {
     display: flex;
     align-items: center;
@@ -5,7 +6,7 @@
     height: 60px;
     padding-left: 1rem;
 
-
+    // LOGO A LA IZQUIERDA
     &__logo{
         img{
 
@@ -20,6 +21,7 @@
 
     }
 
+    // CONTENEDOR DE LAS OPCIONES MENU
     &__container{
         display: flex;
         justify-content: flex-end;
@@ -27,33 +29,41 @@
 
     }
 
+    // LISTA DE OPCIONES
     &__list{
         display: flex;
         justify-content: flex-end;
         list-style: none;
         align-items: center;
+        // a{
+        //     margin: 0 20px;
+        //     font-weight: $me-font-regular;
+        //     font-size: $me-medium;
+        //     color: $me-white;
+        // }
+    }
+
+    // ITEM DE LA LISTA
+    &__item{
+        list-style: none;
+        color: $me-white;
         a{
             margin: 0 20px;
             font-weight: $me-font-regular;
             font-size: $me-medium;
             color: $me-white;
-        }
-    }
-
-    &__item{
-        list-style: none;
-        color: $me-white;
-        a{
             color: $me-white;
             text-decoration: none;
             font-family: $me-family-segundary;
-            font-weight: $me-font-regular; 
+ 
         }
+        // ITEMES OCULTOS EN MOVIL
         @include point_phone{
             display: none;
         }
     }
 
+    // HAMBURGUESA...
     &__movil{
         display: none;
         color: $me-white;

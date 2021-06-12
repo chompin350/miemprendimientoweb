@@ -19,7 +19,7 @@
         border: 1px solid $me-charcoal;
         padding: 1rem;
         margin: .5rem;
-
+        
         &__item {
             width: 100%;
             margin: 1rem;
@@ -104,10 +104,11 @@ i{
     padding: 1rem;
 }
 
-//imagen SVG path
+//imagen SVG path una forma de manejar SVG
 .imgr{
     -webkit-animation: 3s rotate linear infinite;
     animation: 3s rotate linear infinite;
     -webkit-transform-origin: 50% 50%;
     transform-origin: 79% 79%;
 }
+
